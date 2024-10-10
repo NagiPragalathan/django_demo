@@ -1,0 +1,18 @@
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="text1">Text 1:</label>
+    <input type="text" id="text1" name="text1" required><br><br>
+    <label for="text2">Text 2:</label>
+    <input type="text" id="text2" name="text2" required><br><br>
+    <label for="dropdown">Select an option:</label>
+    <select id="dropdown" name="dropdown" required>
+        <option value="add">Add</option>
+        <option value="sub">Sub</option>
+        <option value="div">Div</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+</form>
+{% if op %}
+<h1>output</h1>
+{{ op }}
+{% endif %}

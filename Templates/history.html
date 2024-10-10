@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Text 1</th>
+    <th>Text 2</th>
+    <th>Output</th>
+  </tr>
+  {% for i in values %}
+  <tr>
+    <td>{{ i.text1 }}</td>
+    <td>{{ i.text2 }}</td>
+    <td>{{ i.val }}</td>
+  </tr>
+  {% endfor %}
+</table>
