@@ -1,0 +1,1 @@
+[[print(j) for j in i ] for i in [[abs(i-11)*" "+" "+i*"* "  for i in range(1, 11)], [abs(i-11)*" "+" "+i*"* "  for i in range(1, 11)][::-1][1:]]]
